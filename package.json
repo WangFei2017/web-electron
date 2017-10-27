@@ -1,0 +1,46 @@
+{
+  "name": "alphabond",
+  "version": "1.0.0",
+  "description": "A minimal Electron alphabond application",
+  "main": "main.js",
+  "scripts": {
+    "ebuild": "build --help && build -w --ia32",
+    "start": "electron .",
+    "build:dev": "electron-packager ./ alphabond --out ./dist --platform=win32 --arch=ia32 --overwrite=true --icon=./afcat_256x256.ico --asar=false --app-version=2.0.3 --ignore=\"(dist|src|docs|.gitignore|LICENSE|README.md|webpack.config.js|node_modules|.svn|pepflashplayer64_23_0_0_162)\"",
+    "build": "electron-packager ./ alphabond --out ./dist --platform=win32 --arch=ia32 --overwrite=true --icon=./afcat_256x256.ico --asar --app-version=2.0.3 --ignore=\"(dist|src|docs|.gitignore|LICENSE|README.md|webpack.config.js|node_modules|.svn|pepflashplayer64_23_0_0_162)\""
+  },
+  "repository": "https://github.com/electron/electron-quick-start",
+  "keywords": [
+    "Electron",
+    "quick",
+    "start",
+    "tutorial",
+    "demo"
+  ],
+  "author": "GitHub",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "~1.6.11",
+    "electron-builder": "^19.31.1",
+    "electron-packager": "^8.7.2"
+  },
+  "build": {
+    "appId": "alphabond",
+    "productName": "债金所金融同业平台",
+    "win": {
+     "asar": false,
+     "icon": "afcat_256x256.ico"
+    },
+    "files":[
+      {
+        "filter": ["!pepflashplayer64_23_0_0_162/*"]
+      }
+    ],
+    "nsis":{
+      "oneClick": false,
+      "perMachine": true,
+      "allowToChangeInstallationDirectory": true,
+      "uninstallDisplayName": "债金所金融同业平台卸载"
+    }
+  }
+}
