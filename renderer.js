@@ -3,10 +3,8 @@
 // All of the Node.js APIs are available in this process.
 var webview = document.getElementById("mainView");
 
-// webview.src = 'http://127.0.0.1:3001/alphabond/';
-// webview.src = 'http://11.177.15.104:10110/alphabond/';
-webview.src = 'http://11.177.15.106:10110/alphabond/';
-// webview.src = 'https://alphain.com.cn/';
+// webview.src = 'http://127.0.0.1:3001/';
+webview.src = 'https://www.baidu.com/';
 
 document.onkeydown=function(event){
     var e = event || window.event || arguments.callee.caller.arguments[0];
