@@ -4,6 +4,7 @@
 var webview = document.getElementById("mainView");
 
 // webview.src = 'http://127.0.0.1:3001/';
+// webview.src = '';
 webview.src = 'https://www.baidu.com/';
 
 document.onkeydown=function(event){
