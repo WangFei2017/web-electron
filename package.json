@@ -26,7 +26,7 @@
   },
   "build": {
     "appId": "alphabond",
-    "productName": "债金所金融同业平台",
+    "productName": "平台",
     "win": {
      "asar": false,
      "icon": "afcat_256x256.ico"
@@ -40,7 +40,7 @@
       "oneClick": false,
       "perMachine": true,
       "allowToChangeInstallationDirectory": true,
-      "uninstallDisplayName": "债金所金融同业平台卸载"
+      "uninstallDisplayName": "卸载"
     }
   }
 }
